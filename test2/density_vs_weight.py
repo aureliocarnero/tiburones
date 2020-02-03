@@ -91,18 +91,4 @@ trim = 0.01
 x,y,err_jk, ngal_mean = lsssys.binned_xyerr(sysmap, galmap, nbins = nbins1d, trim = trim, binedges = binedges, overmean=False, returnmean=True, nboots=nboots, bootssize=bootssize, jkpix=jkpix, removezeros=False)
 
 np.savetxt('dens_vs_weight.txt',np.array([x,y,err_jk]).transpose())
-print (ngal_mean)
-plt.errorbar(x,y,err_jk, fmt='.', color='k')
-#plt.errorbar(x,y/ngal_mean,err_jk/ngal_mean, fmt='.', color='k')
-plt.axhline(1, color='g', ls='--')
-plt.xlabel('VHS image weight')
-#plt.ylabel(r'$N_{\rm gal}/ \langle N_{\rm gal} \rangle $')
-plt.ylabel(r'$N_{\rm gal}$')
-#title='{0} < z < {1}'.format(zmin,zmax)
-#plt.title(title)
-plt.grid()
-imagename='dens_vs_weight.png'
-plt.savefig(imagename)
-plt.close()
-
 
