@@ -33,7 +33,7 @@ mainoutdir = './'
 
 use_equalarea_bins = True
 
-nbins1d = 10
+nbins1d = 20
 
 ####magnitude within catalog
 zcol = 'LAMBDA'
