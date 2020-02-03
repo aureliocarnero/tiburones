@@ -6,7 +6,7 @@ Use create_footprint_weight.py for this first step
 
 As a second step, we use this information to calculate the dependence between source density as a function of image weight. It uses a private DES python library.
 
-Use dens_vs_weight_example.py
+Use density_vs_weight.py
 
 
 Dependencies (python 3.):
